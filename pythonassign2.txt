@@ -1,0 +1,116 @@
+1. l=[]
+   for num in range[20]:
+   num=int(input("enter value"))
+   l.append(number)
+positive,negative,zero=0,0,0
+
+for i in l:
+         if int(i)>0:
+                 positive+=1
+         elif int(i)<0:
+                negative+=1
+         else:
+               zero+=1
+print(positive)
+print(negative)
+print(zero)
+>>> count_odd = 0
+>>> count_even = 0
+>>> for x in numbers:
+        if not x % 2:
+                count_even+=1
+        else:
+                count_odd+=1
+>>> print("Number of even numbers :",count_even)
+>>> print("Number of odd numbers :",count_odd)
+
+
+2->>> tuple1=('abc','pqr','efg')
+>>> tuple2=('ritu','sheetal''amam')
+>>> print('maximum element in tuple1 and tuple2:'+(max(tuple1))+','+(max(tuple2)))
+maximum element in tuple1 and tuple2:pqr,sheetalamam
+>>> print('maximum element in tuple1 and tuple2:'+(min(tuple1))+','+(min(tuple2)))
+maximum element in tuple1 and tuple2:abc,ritu
+
+
+
+3-tuple=(1,2,3,4,5)
+>>> for x in tuple:
+         product *= x
+
+
+>>> print(product)
+120
+
+4-
+ x_set=set()
+ first_num = int(input('Enter first number: '))
+ second_num = int(input('Enter second number: '))
+ third_num = int(input('Enter third number: '))
+ x_set.append(first_num)
+ x_set.append(second_num)
+ x_set.append(third_num)
+ z_set=set()
+ first_num = int(input('Enter first number: '))
+ second_num = int(input('Enter second number: '))
+ third_num = int(input('Enter third number: '))
+ z_set.append(first_num)
+ z_set.append(second_num)
+ z_set.append(third_num)
+ >>> a_set=x_set-z_set
+>>> print(a_set)
+{1, 2}
+>>> b_set=x_set&z_set
+>>> print(b_set)
+{3}
+>>> issubset=x_set<=z_set
+>>> print(issubset)
+False
+>>> issuperset=x_set>=z_set
+>>> print(issuperset)
+False
+
+5- >>> import ast
+>>> a = input("Please enter a dictionary: ")
+Please enter a dictionary: {'a':100,'b':90,'c':98,'d':89,'e':85,'p':97,'q':95,'r':94,'s':78,'t':87}
+>>> a
+"{'a':100,'b':90,'c':98,'d':89,'e':85,'p':97,'q':95,'r':94,'s':78,'t':87}"
+>>> d = ast.literal_eval(a)
+>>> d
+{'a': 100, 'b': 90, 'c': 98, 'd': 89, 'e': 85, 'p': 97, 'q': 95, 'r': 94, 's': 78, 't': 87}
+
+
+6- >>> for s in sorted(d):
+        print(s,":",d[s])
+
+
+a : 100
+b : 90
+c : 98
+d : 89
+e : 85
+p : 97
+q : 95
+r : 94
+s : 78
+t : 87
+
+7->>> s="m i s s i s s i p p i"
+>>> l=s.split()
+>>> print(words)
+['m', 'i', 's', 's', 'i', 's', 's', 'i', 'p', 'p', 'i']
+>>> l.count('m')
+1
+>>> l.count('i')
+4
+>>> l.count('s')
+4
+>>> l.count('p')
+2
+>>> l=list(str)
+>>> for j in l:
+       p=l.count(j)
+       dict[j]=p
+>>> print(p)
+>>>{'m':1,'i':4,'s':4,'p':2}
+
