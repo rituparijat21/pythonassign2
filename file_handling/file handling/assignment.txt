@@ -1,0 +1,210 @@
+1:
+def lastn(f,n):
+    with open(f) as file:
+        print("last ",n," lines from file",f)
+        for line in (file.readlines() [-n:]):
+            print(line,end='')
+
+name = input("Enter file name : ")
+n = int(input("Enter no. of last lines to read : "))
+try:
+    lastn(name,n)
+except:
+    print("File error")
+
+Enter file name : states.txt
+Enter no. of last lines to read : 10
+last  10  lines from file states.txt
+Nagaland
+Orissa
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Tripura
+Uttaranchal
+Uttar Pradesh
+West Bengal
+
+3:
+with open("states.txt") as f:
+    with open("copy.txt", "w") as f1:
+        for line in f:
+            f1.write(line)
+
+f = open("copy.txt")
+d = f.read()
+print(d)
+output:
+Andra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Jharkhand
+Karnataka
+Kerala
+Madya Pradesh
+Maharashtra
+Manipur
+Meghalaya
+Mizoram
+Nagaland
+Orissa
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Tripura
+Uttaranchal
+Uttar Pradesh
+West Bengal
+
+4:
+with open('states.txt') as f1, open('capitals.txt') as f2:
+    for line1, line2 in zip(f1, f2):
+        print(line1+line2)
+output:
+Andra Pradesh
+Hyderabad
+
+Arunachal Pradesh
+Itangar
+
+Assam
+Dispur
+
+Bihar
+Patna
+
+Chhattisgarh
+Raipur
+
+Goa
+Panaji
+
+Gujarat
+Gandhinagar
+
+Haryana
+Chandigarh
+
+Himachal Pradesh
+Shimla
+
+Jammu and Kashmir
+Srinagar and Jammu
+
+Jharkhand
+Ranchi
+
+Karnataka
+Bangalore
+
+Kerala
+Thiruvananthapuram
+
+Madya Pradesh
+Bhopal
+
+Maharashtra
+Mumbai
+
+Manipur
+Imphal
+
+Meghalaya
+Shillong
+
+Mizoram
+Aizawi
+
+Nagaland
+Kohima
+
+Orissa
+Bhubaneshwar
+
+Punjab
+Chandigarh
+
+Rajasthan
+Jaipur
+
+Sikkim
+Gangtok
+
+Tamil Nadu
+Chennai
+
+Tripura
+Agartala
+
+Uttaranchal
+Dehradun
+
+Uttar Pradesh
+Lucknow
+
+West Bengal
+Kolkata
+
+5:
+import random
+with open("random1.txt",'w') as f:
+    l=[]
+    for i in range(10):
+        l.append(random.randint(0, 9))
+    for i in l:
+        f.write(str(i))
+        f.write("\n")
+with open("random1.txt", 'r') as f:
+    list = f.readlines()
+    list.sort()
+    with open("random2.txt", 'w') as f1:
+        for i in list:
+            f1.write(str(i))
+            f1.write("\n")
+with open("random1.txt") as f:
+    d=f.read()
+    print(d)
+with open("random2.txt") as f:
+    d=f.read()
+    print(d)
+output:
+6
+5
+8
+2
+0
+6
+4
+9
+7
+7
+
+0
+
+2
+
+4
+
+5
+
+6
+
+6
+
+7
+
+7
+
+8
+
+9
+
